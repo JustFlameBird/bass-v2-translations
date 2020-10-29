@@ -20,7 +20,7 @@ lang = {
     NSFW: 'Este Comando Solo Se Puede Usar En Canales NSFW!',
     NO_PERMISSIONS: 'No Tienes Permisos Para Usar Ese Comando!',
     MISSING_REQUIRED_SETTINGS: (settings) => `Este Server No Tiene **${settings.join(', ')}** En la Configuracion Del Server${settings.length !== 1 ? 's' : ''} y por lo tanto este comando no puede completarse.`,
-    RUNIN: (types) => `This command is only available in \`${types}\` channels!`,
+    RUNIN: (types) => `Este Comando Solo Esta Disponible En \`${types}\` Canales!`,
     RUNIN_NONE: (name) => `Comando \`${name}\` No Esta Configurado Para Que Corra En Algun Canal.`,
     // EVAL
     // Invite: Ya-da-da-da-da-da- It is good day to be not dead!
@@ -51,7 +51,7 @@ lang = {
     HELP_BOT_OWNER_ONLY: `Owner Del Bot`,
     HELP_MANAGE_GUILD: `Administrar el servidor`,
     HELP_SERVER_OWNER: `Propietario del servidor`,
-    HELP_SYNTAX: (prefix) => `${prefix}comando - Descripcion *(Permisos Requeridos)*\nPara Obtener Información Sobre El Uso Del Comando Haz ${prefix}Y Va a Decir el uso Correcto\nPor Ejemplo: ${prefix}volume`,
+    HELP_SYNTAX: (prefix) => `${prefix}comando - Descripcion *(Permisos Requeridos)*\nPara Obtener Información Sobre El Uso Del Comando Haz ${prefix}help (nombre del comando)\n Usando El Comando Que Necesita Argumentos, Igualmente sin Darlos Dara El Uso Del Comando.`,
     //HELP_SYNTAX: (prefix) => `${prefix}command - Description *(Required permissions)*\nTo get informations about command usage do ${prefix}help (commandname)\nUsing command that requires args, without giving them will also give command usage info`,
     HELP_COMMANDS_STRING: `Comandos`,
     HELP_COMMAND_NOT_FOUND: (command) => `Comando \`${command}\` no se a encontrado.`,
@@ -88,9 +88,11 @@ lang = {
     CURRENT_LANGUAGE: (clang, langsavailable) => `**El lenguaje Actual es:** \`${clang}\`\n\nLenguajes Disponibles: \`${langsavailable}\``,
     LANG_DESCRIPTION: 'Canbia el lenguaje Del Server/Enseña el Lenguaje Actual',
     // TRANSLATORS / CONTRIBUTORS
+    // ok
     TRANSLATORS_DESCRIPTION: 'Enseña Los Traductores Que Ayudaron A Traducir el Bot',
     CONTRIBUTORS_DESCRIPTION: 'Enseña A Todos Los Que Han Contribuido Con El Proyecto Bass',
     // SAY
+    // i say Execute Order 66
     SAY_DESCRIPTION: 'Bass Repite El Mismo Mensaje',
     // SHARD
     SHARD_DESCRIPTION: 'Enseña Info Sobre Los Shards/Clusters',
@@ -229,28 +231,28 @@ lang = {
     VOTED_MESSAGE: (mention, date, votes) => `¡Votaste A Bass En Las Últimas 12 Horas!\nGracias, ${mention} Apoyas Bass Con Cada Voto! nVotaste El: \`${date}\`\nHas Votado a Bass ${votes} times.\n\n[Vote link](https://top.gg/bot/590948209925423123/vote)`,
     NOT_VOTED_MESSAGE: (date, votes) => `No Votaste A Bass En Las Últimas 12 Horas :(\nTu Ultimo Voto Fue: \`${date}\`\nHas Votado a Bass ${votes} Veces.\n\nPuedes Votar a Bass [Aqui](https://top.gg/bot/590948209925423123/vote).`,
     // STUFF FOR NEW HELP
-    HELP_DESCRIPTION_TITLE_STRING: (prefix) => `The prefix on this server is \`${prefix}\`\nTo get more information about a command try ${prefix}help [command] For ex: ${prefix}help bass or ${prefix}help play`,
+    HELP_DESCRIPTION_TITLE_STRING: (prefix) => `El Prefix en Este Server Es \`${prefix}\`\nPara Tener Más Informacion Sobre Un Comando Haz: ${prefix}help [comando] Por Ejemplo: ${prefix}help bass o tamabien ${prefix}help play`,
     HELP_PATREON: 'Patreon',
-    HELP_CATEGORY: 'Category',
-    HELP_NAME: 'Name',
-    HELP_ALIASES: 'Aliases',
-    HELP_CMD_DESCRIPTION: 'Description',
-    HELP_REQUIRED_PERMS: 'Required permissions',
-    HELP_BOT_REQUIRED_PERMS: 'Required permissions by Bass',
+    HELP_CATEGORY: 'Categoria',
+    HELP_NAME: 'Nombre',
+    HELP_ALIASES: 'Alias',
+    HELP_CMD_DESCRIPTION: 'Descripccion',
+    HELP_REQUIRED_PERMS: 'Permisos Requeridos',
+    HELP_BOT_REQUIRED_PERMS: 'Permisos Requeridos Por Bass',
     HELP_COOLDOWN_TITLE: 'Cooldown',
-    HELP_COOLDOWN: (uses, seconds) => `${uses} use${uses === 1 ? '' : 's'} per ${seconds} second${seconds === 1 ? '' : 's'}`,
-    HELP_EXAMPLECOMMANDUSAGE: 'Example usage',
-    HELP_EXAMPLECOMMANDUSAGE_OPTIONAL_REQUIRED: '() - optional, <> - required',
-    HELP_EXAMPLEUSAGE: ' (command)',
-    EVAL_EXAMPLEUSAGE: ' <code>',
-    SAY_EXAMPLEUSAGE: ' <message>',
-    TTS_EXAMPLEUSAGE: ' <message> | <language code>',
-    LANG_EXAMPLEUSAGE: ' (language)',
+    HELP_COOLDOWN: (uses, seconds) => `${uses} usos${uses === 1 ? '' : 's'} por ${seconds} segundo${seconds === 1 ? '' : 's'}`,
+    HELP_EXAMPLECOMMANDUSAGE: 'Ejemplo De Uso',
+    HELP_EXAMPLECOMMANDUSAGE_OPTIONAL_REQUIRED: '() - opcional, <> - requerido',
+    HELP_EXAMPLEUSAGE: ' (comando)',
+    EVAL_EXAMPLEUSAGE: ' <codigo>',
+    SAY_EXAMPLEUSAGE: ' <mensaje>',
+    TTS_EXAMPLEUSAGE: ' <mensaje> | <codigo del lenguaje>',
+    LANG_EXAMPLEUSAGE: ' (lenguaje)',
     PREFIX_EXAMPLEUSAGE: ' (prefix)',
     BITRATE_EXAMPLEUSAGE: ' <bitrate>',
-    LOOP_EXAMPLEUSAGE: ' <loop type>',
-    PLAY_EXAMPLEUSAGE: ' <song name or url>',
-    VOLUME_EXAMPLEUSAGE: ' (volume)',
+    LOOP_EXAMPLEUSAGE: ' <tipo de repetion>',
+    PLAY_EXAMPLEUSAGE: ' <nomrbe de la cancion o url>',
+    VOLUME_EXAMPLEUSAGE: ' (volumen)',
 
 
     // OTHER
@@ -258,5 +260,6 @@ lang = {
     OK: 'OK',
     ERROR: 'ERROR'
     // yes this is bird
-    // FlameBird#9020
+    // old name FlameBird#9020 
+    // now my name is tada ⌠ᴄᴛOS⌡#9020
 };
